@@ -1,8 +1,10 @@
 # task1_node_cli
 Run app
+
 $ git clone https://github.com/Andrei7402/task1_node_cli.git
-$ cd nodeTask1
+$ cd task1_node_cli
 $ npm i
+
 Usage example:
 CLI tool accept 3 options (short alias and full name):
 
