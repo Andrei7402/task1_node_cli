@@ -9,7 +9,7 @@ class TaskTransform extends Transform {
         this.action = action;
     }
 
-    _transform(value, enc, done, a1,a2, b1,b2) {
+    _transform(value, enc, done) {
         let result = undefined;
 
         switch (this.action) {
