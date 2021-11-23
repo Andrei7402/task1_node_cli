@@ -6,3 +6,8 @@ module.exports.Sort = function Sort(val) {
     
     return comparison;
 }
+
+module.exports.Distance = function Distance(arr1, arr2) {
+
+    return Math.abs(arr1[0]-arr2[0]) + Math.abs(arr1[1]-arr2[1]);
+}

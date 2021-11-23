@@ -18,7 +18,10 @@ class TaskTransform extends Transform {
                 result = Sort(val);
                 break;
             case 'array':
-                result = "array";
+              const [pointA, pointB] = value.toString().split(":");
+              const arr1 = JSON.parse(pointA)
+              const arr2 = JSON.parse(pointB);
+                result = Distance(arr1, arr2);
                 break;
             default:
                 process.stderr.write(chalk.red("✘ Erorr") + ' "Action not found :("\n');
